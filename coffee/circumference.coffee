@@ -1,5 +1,8 @@
-class CircumferenceDemo
+#_require DemoSelect.coffee
+
+class CircumferenceDemo extends DemoSelect
   constructor:(s, @circle)->
+    super(@circle)
     @open = false
     @s = s.select "#Circumference"
     sel = (str) =>
@@ -20,14 +23,16 @@ class CircumferenceDemo
     sel("#CUpRight").attr mask:sel "#CUpRightHalf"
     sel("#CDownLeft").attr mask:sel "#CDownLeftHalf"
     
-    sel("#CLabel").click @toggle
+    sel("#CLabel").click @select
+
   toggle: =>
     if @open
       @hide()
     else
       @show()
-    @open = not @open
+
   hide: =>
+    return if not @open
     rAnim = transform:"r"+[0,320,320]
     lAnim = transform:"r"+[0,320,320]
     aAnim = transform:"r"+[0,320,320]
@@ -37,6 +42,8 @@ class CircumferenceDemo
     @label2.animate opacity:0, 600
     @rOutline.animate rAnim, 1000
     @lOutline.animate lAnim, 1000
+    @open = no
+
   show: =>
     rAnim = transform:"r"+[-179,320,320]
     lAnim = transform:"r"+[179,320,320]
@@ -47,3 +54,4 @@ class CircumferenceDemo
     @label2.animate opacity:1, 600
     @rOutline.animate rAnim, 1200
     @lOutline.animate lAnim, 1200
+    @open = yes

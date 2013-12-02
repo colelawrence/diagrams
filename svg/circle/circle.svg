@@ -82,15 +82,17 @@
 			</g>
 			<g id="CLabel1">
 				
-					<circle opacity="0.9" fill="#FFFFFF" stroke="#DDDDDD" stroke-width="8" stroke-miterlimit="10" cx="125.584" cy="122.791" r="40"/>
+					<circle opacity="0.1" fill="#FFFFFF" stroke="#DDDDDD" stroke-width="3" stroke-miterlimit="10" cx="125.584" cy="122.791" r="40"/>
 				<text transform="matrix(1 0 0 1 107.7534 137.8442)" font-family="'MicrosoftSansSerif'" font-size="48">C</text>
 			</g>
 		</g>
 	</g>
-	<circle fill="#BADA55" stroke="#8DA529" stroke-width="24" stroke-miterlimit="10" cx="320" cy="320" r="210"/>
-	<line fill="none" stroke="#8DA529" stroke-width="24" stroke-miterlimit="10" x1="320" y1="530" x2="320" y2="110"/>
-	<line fill="none" stroke="#8DA529" stroke-width="24" stroke-miterlimit="10" x1="320" y1="320" x2="530" y2="320"/>
-	<circle fill="#69751F" cx="320" cy="320" r="12.5"/>
+	<g>
+		<circle fill="#BADA55" stroke="#8DA529" stroke-width="12" stroke-miterlimit="10" cx="320" cy="320" r="210"/>
+		<line fill="none" stroke="#8DA529" stroke-width="12" stroke-miterlimit="10" x1="320" y1="530" x2="320" y2="110"/>
+		<line fill="none" stroke="#8DA529" stroke-width="12" stroke-miterlimit="10" x1="320" y1="320" x2="530" y2="320"/>
+		<circle fill="#69751F" cx="320" cy="320" r="8"/>
+	</g>
 	<g id="Diameter">
 		<g id="dLabel">
 			<rect x="268.994" y="114.755" fill-opacity="0" width="61.309" height="180.078"/>
@@ -128,7 +130,7 @@
 			</g>
 			<g id="dLabel1">
 				
-					<circle opacity="0.9" fill="#FFFFFF" stroke="#DDDDDD" stroke-width="8" stroke-miterlimit="10" cx="287.945" cy="215.724" r="40"/>
+					<circle opacity="0.1" fill="#FFFFFF" stroke="#DDDDDD" stroke-width="3" stroke-miterlimit="10" cx="287.945" cy="215.724" r="40"/>
 				<text transform="matrix(1 0 0 1 275.772 224.8809)" font-family="'MicrosoftSansSerif'" font-size="42">d</text>
 			</g>
 		</g>
@@ -183,7 +185,7 @@
 			</g>
 			<g id="RadiusLabel1">
 				
-					<circle opacity="0.9" fill="#FFFFFF" stroke="#DDDDDD" stroke-width="8" stroke-miterlimit="10" cx="432.631" cy="286.18" r="40"/>
+					<circle opacity="0.1" fill="#FFFFFF" stroke="#DDDDDD" stroke-width="3" stroke-miterlimit="10" cx="432.631" cy="286.18" r="40"/>
 				<text transform="matrix(1 0 0 1 423.0186 298.1797)" font-family="'MicrosoftSansSerif'" font-size="48">r</text>
 			</g>
 			<rect x="360.333" y="260.5" fill-opacity="0" width="129.334" height="102.654"/>

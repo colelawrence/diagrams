@@ -1,6 +1,10 @@
-class RadiusDemo
-  constructor:(s)->
+#_require DemoSelect.coffee
+
+class RadiusDemo extends DemoSelect
+  constructor:(s, @circle)->
+    super(@circle)
     @open = false
+    @selected = false
     @s = s.select "#Radius"
     sel = (str) =>
       @s.select str
@@ -15,19 +19,22 @@ class RadiusDemo
     sel("#RadiusLeft").attr mask:sel "#RadiusLeftSide"
     sel("#RadiusRight").attr mask:sel "#RadiusRightSide"
     
-    sel("#RadiusLabel").click @toggle
+    sel("#RadiusLabel").click @select
+
   toggle: =>
     if @open
       @hide()
     else
       @show()
-    @open = not @open
+
   hide: =>
+    return if not @open
     @lArrow.animate transform:"t"+[0,0], 1000
     @rArrow.animate transform:"t"+[0,0], 1000
     @label1.animate opacity:1, 400
     @label2.animate opacity:0, 400
     @arrows.animate opacity:0, 400
+    @open = no
 
   show: =>
     @lArrow.animate transform:"t"+[-105,0], 1000, mina.easein
@@ -35,3 +42,4 @@ class RadiusDemo
     @label1.animate opacity:0, 400
     @label2.animate opacity:1, 400
     @arrows.animate opacity:1, 400
+    @open = yes
