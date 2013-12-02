@@ -1,0 +1,25 @@
+<svg version="1.1" id="Circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="640px" height="640px" viewBox="0 0 640 640" enable-background="new 0 0 640 640" xml:space="preserve">
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="320" y="98.725" width="198.5" height="442.55"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g id="RevealRight" clip-path="url(#SVGID_2_)">
+			<g id="Motion">
+				<defs>
+					<rect id="SVGID_3_" x="121.5" y="98.725" width="198.5" height="442.55"/>
+				</defs>
+				<clipPath id="SVGID_4_">
+					<use xlink:href="#SVGID_3_"  overflow="visible"/>
+				</clipPath>
+				<circle id="CircleOutline" clip-path="url(#SVGID_4_)" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="320" cy="320" r="190"/>
+			</g>
+		</g>
+	</g>
+</g>
+<circle fill="#8DE818" cx="320" cy="320" r="176.5"/>
+</svg>
