@@ -4,7 +4,7 @@ diagrams
 Animated diagrams using Snap.svg
 
 
-_How to Build_
+##_How to Build_
 
 Have [nodejs](http://nodejs.org) installed.
 
