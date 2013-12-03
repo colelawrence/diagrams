@@ -1,0 +1,32 @@
+<head>
+<script src="lib/snap.svg-min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg id="svg"></svg>
+<script type="text/coffeescript">
+s = Snap("#svg")
+circle = {}
+Snap.load "svg/testpath.svg", (f) ->
+  s.append f.select("g")
+  spiral = s.select '#Spiral'
+  window.dd = spiral
+  spiral.totalLength = spiral.getTotalLength()
+  spiral.attr
+    "stroke-dasharray":spiral.totalLength,
+    "stroke-dashoffset":spiral.totalLength,
+    "fill":"#f3f3f3"
+  spiral.arrow = s.group s.rect 0, 0, 15, 15, 4, 4
+  spiral.click (event)->
+    instance = @
+    Snap.animate @.totalLength, 0, (val) =>
+      @.attr "stroke-dashoffset":val
+      point = @.getPointAtLength @.totalLength - val
+      anglePoint = @.getPointAtLength @.totalLength - val - .1
+      angle = Snap.angle anglePoint.x, anglePoint.y, point.x, point.y
+      @.arrow.attr transform:"t"+[point.x,point.y]
+      @.arrow.select("rect").attr transform:"r"+[angle-45,0,0]
+    , 10000
+</script>
+<script src="lib/coffee-script.js"></script>
+</body>
