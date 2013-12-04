@@ -1,6 +1,4 @@
-#_require circumference.coffee
-#_require diameter.coffee
-#_require radius.coffee
+#_require Arrow.coffee
 
 # helper class
 class Methodder
@@ -10,6 +8,8 @@ class Methodder
 
 s = Snap("#svg")
 circle = {}
-Snap.load "svg/circle/circle.svg", (f) ->
-  s.append f.select("g")
-  new CircleApp(s)
+Snap.load "svg/testpath.svg", (f) ->
+  f.selectAll("path").forEach (el) ->
+  	group = s.group el
+  	new Arrow(group)
+  	s.append el
