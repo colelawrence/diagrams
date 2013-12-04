@@ -12,4 +12,4 @@ Snap.load "svg/testpath.svg", (f) ->
   f.selectAll("path").forEach (el) ->
   	group = s.group el
   	new Arrow(group)
-  	s.append el
+  	s.append group
